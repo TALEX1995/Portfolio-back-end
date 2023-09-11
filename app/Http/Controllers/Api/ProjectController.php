@@ -15,6 +15,12 @@ class ProjectController extends Controller
     {
         $projects = Project::orderBy('created_at', 'DESC')->paginate(5);
 
+        foreach ($projects as $project) {
+            if ($project->image) {
+                $project->image = asset('storage/' . $project->image);
+            }
+        }
+
         return response()->json($projects);
     }
 
