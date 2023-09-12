@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Rotte Api per i Project
+// Routes Api for Projects
 Route::apiResource('projects', ProjectController::class);
