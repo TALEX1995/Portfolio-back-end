@@ -10,7 +10,8 @@
 
 <body>
   <h1>Nuovo messagio in arrivo dal contact del portfolio</h1>
-  <p>{{ $message }}</p>
+  <p>{{ $content }}</p>
+  <p>Numero di telefono {{ $cellNumb }}</p>
 </body>
 
 </html>

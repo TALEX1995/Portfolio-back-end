@@ -45,7 +45,7 @@ class ContactMessageMail extends Mailable
     {
         return new Content(
             view: 'mails.contacts.message',
-            with: ['message' => $this->message],
+            with: ['content' => $this->message, 'cellNumb' => $this->cellNumb],
         );
     }
 
